@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search-big" translatesAutoresizingMaskIntoConstraints="NO" id="9hW-oM-0xt">
+                    <rect key="frame" x="102" y="114" width="277" height="252"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="252" id="i6N-op-ai1"/>
+                        <constraint firstAttribute="width" constant="277" id="p5b-13-Uv9"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Mechanism Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dui-7J-H2C">
+                    <rect key="frame" x="8" y="8" width="464" height="44"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                    <color key="textColor" red="1" green="0.99234441309620691" blue="0.99693571750321264" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" red="0.75211456350000006" green="0.9468555729" blue="0.97175228599999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="-1" height="0.0"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) Eugene Mozharovsky 2014" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6D-TO-7Uw">
+                    <rect key="frame" x="8" y="451" width="464" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.17254901960784313" green="0.77254901960784317" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Dui-7J-H2C" firstAttribute="centerX" secondItem="9hW-oM-0xt" secondAttribute="centerX" id="0Mc-Ou-QV1"/>
+                <constraint firstItem="9hW-oM-0xt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7Zv-Ze-8SR"/>
+                <constraint firstItem="9hW-oM-0xt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="E4M-HM-eN4"/>
+                <constraint firstItem="x6D-TO-7Uw" firstAttribute="leading" secondItem="Dui-7J-H2C" secondAttribute="leading" id="Hi6-Ts-xmw"/>
+                <constraint firstItem="9hW-oM-0xt" firstAttribute="top" secondItem="Dui-7J-H2C" secondAttribute="bottom" constant="62" id="MMK-Pp-2IH"/>
+                <constraint firstItem="x6D-TO-7Uw" firstAttribute="trailing" secondItem="Dui-7J-H2C" secondAttribute="trailing" id="aUa-aK-VVH"/>
+                <constraint firstItem="Dui-7J-H2C" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="lZY-Kq-aau"/>
+                <constraint firstItem="Dui-7J-H2C" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="uIK-RL-tI0"/>
+                <constraint firstItem="x6D-TO-7Uw" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" id="zLW-gn-RQO"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="search-big" width="256" height="256"/>
+    </resources>
+</document>
